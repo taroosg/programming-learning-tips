@@ -6,7 +6,7 @@ marp: true
 theme: gaia
 class:
  - invert
-headingDivider: 2 
+headingDivider: 2
 paginate: true
 -->
 
@@ -16,118 +16,329 @@ _class:
  - invert
 -->
 
-# Deploy Marp to GitHub Pages
+# プログラミング学習の心得
 
-Presentations to Webpages: Instantly!
+コード is 量！
 
-## What?
+## 自己紹介（Twitter: @taroosg）
 
-[Marp](https://marp.app/) lets you create HTML slides from markdown (like this!).
-
-This presentation is both a [website](https://alexsci.com/marp-to-pages) and a [README.md](https://github.com/ralexander-phi/marp-to-pages/blob/main/README.md).
-
-## Why?
-
-Treat your presentation the same way you treat code.
-
-- Use git to track changes
-- Pull requests to collaborate
-- Deploy automatically
-- See a problem? Open an issue!
-
-## Setup
-
-Want to create your own?
-
-First, create a new repo [from the template repo](https://github.com/ralexander-phi/marp-to-pages).
-
-![](img/use-template.png)
-
-## Configure GitHub Pages
-
-Open your new repo and [setup publishing](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source).
-
-You'll typically use `gh-pages` as the deploy branch.
-
-## Review Build
-
-Click on Actions tab and see if the build succeeded (it may take some time).
-
-![](img/click-actions.png)
-
-You should now see the generated files in the `gh-pages` branch.
-
-## View webpage
-
-Open your deployed webpage to see the content.
-
-Out of the box you should see `README.md` as `/index.html` and `/README.pdf`. Slides under `docs/` are also converted.
-
-## Running locally
-
-Locally you'll run commands like:
-
-```
-$ marp README.md -o build/README.pdf
+```json
+{
+  "name": "大杉太郎（たろさん・たろ先生）",
+  "works": [
+    {
+      "work": "🎓 G's ACADEMY FUKUOKA 主任講師",
+      "skills": ["JavaScript", "React", "PHP", "Laravel"]
+    },
+    {
+      "work": "🎓 エンジニア",
+      "skills": ["Laravel", "JavaScript", "画面設計", "DB設計"]
+    }
+  ],
+  "like": ["💻", "📚", "🛩️ 🚌 🚅 🚃", "🥃 🍷 🍺", "🚮"]
+}
 ```
 
-or
+## はじめに
 
-```
-$ npx @marp-team/marp-cli@latest README.md -o build/README.pdf
-```
+せっかくチャレンジするのだから，成果を出しましょう！！
 
-## As a workflow step
+成果を出すためにはどうするのかを共有します！
 
-The workflow runs an equivalent step:
+## 学ぶことが目的ではない
 
-```
-- name: Marp Build (README.pdf)
-  uses: docker://marpteam/marp-cli:v1.7.0
-  with:
-    args: README.md -o build/README.pdf
-  env:
-    MARP_USER: root:root
-```
-
-Note the `args` match the previous slide.
-
-## Customizing the build
-
-Anything in the `build/` folder will be deployed to GitHub Pages.
-
-You can copy extra files or run further processing steps using other tools.
-
-## Learn more about Marp
-
-This is a good time to learn more about Marp. Here's some resources:
-
-- [CommonMark](https://commonmark.org/)
-- [Cheat Sheet](https://commonmark.org/help/)
-- [Themes](https://github.com/marp-team/marp-core/tree/master/themes)
-- [CSS Themes](https://marpit.marp.app/theme-css)
-- [Directives](https://marpit.marp.app/directives)
-- [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
-
-## Example Sites
-
-Known sites using this action are:
-
-- [University of Illinois at Urbana-Champaign's CS 199 Even More Practice](https://cs199emp.netlify.app/) [(code)](https://github.com/harsh183/emp-125)
-- [Exploring agent based models](https://roiarthurb.github.io/Talk-UMMISCO_06-07-2020/) [(code)](https://github.com/RoiArthurB/Talk-UMMISCO_06-07-2020)
-
-Send a [pull request](https://github.com/ralexander-phi/marp-to-pages) to get your site added.
-
-## Publish your slides
-
-When you are ready to share your presentation, commit or merge to `main` and your content on GitHub Pages will automatically update.
-
-# 🎉
 <!--
 _class:
  - lead
  - invert
 -->
-### Hooray!
 
+- 「アイデアを実現するプロダクトをつくる」
 
+- 「プロダクトをつくれる人間になる」
+
+## プロダクトをつくれるようになるには．．．
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+- 「プロダクトをつくる」しかない
+
+- 時間が必要
+
+- 量 >>> 越えられない壁 >>> 質
+
+## 「量」が大事！！！
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+## もくじ
+
+- 時間はなぜ必要か
+
+- 時間をどうやって使うか
+
+- 時間をどうやって作るか
+
+- まとめ
+
+## 時間が必要な理由
+
+人間の構造が原因
+
+よくある例
+
+- Q1：コードが理解できません！！
+
+- Q2：なんで動かないんですか！！
+
+- A：（人間の）仕様です！
+
+## 「理解」とはなにか
+
+理解 = 「多くの具体例から法則を見出すこと」
+
+- 「コード」と「動作結果」から法則を見出す
+
+- わからないときは「具体例」が足りない
+
+そのため．．．
+
+「時間」が具体例の「量」と「多様性」を生み出す！
+
+## コードがわかるようになるには時間が必要！
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+## もくじ
+
+- ~~時間はなぜ必要か~~
+
+- 時間をどうやって使うか
+
+- 時間をどうやって作るか
+
+- まとめ
+
+## 時間をどうやって使うか
+
+時間が必要なことはわかった．
+
+時間をどのように使えばいいのか．．？？
+
+「めっちゃコード書きまくればいい」ではない！！
+
+## プロダクトをつくるときの雑な流れ
+
+1. つくりたいものを決める．
+
+2. 必要な処理を細かく分解する．
+
+3. 試したり調べたりしながら実装する．
+
+## 「分解」が大事
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+## 「分解」が大事
+
+- 「複雑な処理」は「単純な処理」の組み合わせ．
+
+- 単純な処理なら書ける．
+
+- 簡単な処理に分解できれば地道に実装すれば OK！
+
+## つまり．．．
+
+時間の使い方には 2 種類ある．
+
+- よく考えたり日本語で書き出したりで「分解」する時間．
+
+- 分解した内容をコードで書く時間．
+
+## 「分解の時間」「コードの時間」がある！
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+## もくじ
+
+- ~~時間はなぜ必要か~~
+
+- ~~時間をどうやって使うか~~
+
+- 時間をどうやって作るか
+
+- まとめ
+
+## 時間をどうやって作るか
+
+時間はない．
+
+人間の 24 時間は埋まっている．
+
+## 引き算だッ！
+
+1 日のスケジュールを見てみましょう！
+
+```
+ 6h            8h             2h    3h      5h
+ 睡眠           仕事           通勤   食事    その他
+------------|----------------|----|------|----------
+
+```
+
+この中になくてもいい時間はあるでしょうか？？
+
+## なくてもいい時間をなくす
+
+「その他」をコードに充ててみましょう．
+
+```
+ 6h            8h             2h    3h      5h
+ 睡眠           仕事           通勤   食事    コード
+------------|----------------|----|------|----------
+
+```
+
+いい感じですね！
+
+「やらないこと」を決めるのが大事！
+
+## とはいえ．．．
+
+そんな暇はない！
+
+```
+ 6h             11h                  3h     3h     1h
+ 睡眠            仕事                 通勤    食事   その他
+------------|----------------------|------|------|--
+
+```
+
+これは心もとない(´・ω・｀)
+
+## 時短するんだッ！
+
+すでにあるものをより短時間で終わらせましょう！
+
+```
+ 6h             9h              3h     3h     3h
+ 睡眠            仕事             通勤   食事    コード
+------------|------------------|------|------|------
+
+```
+
+これが「質を高める」ことです！
+
+## 質を高めるために
+
+質を高めるには経験値が必要です．
+
+1. 量（経験値）を準備する．
+
+2. 「経験値」を用いて時間を「圧縮」する．
+
+## だから「量 > 質」
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+##
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### 優先順位（やらないこと）を決める．
+
+### 質を高めることで時間を作り出せる．
+
+## もくじ
+
+- ~~時間はなぜ必要か~~
+
+- ~~時間をどうやって使うか~~
+
+- ~~時間をどうやって作るか~~
+
+- まとめ
+
+##
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### コード is 量！
+
+### 時間が必要！
+
+##
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### 時間が多種多様な具体例を生む！
+
+### 具体例が法則を見出せる（= 理解）！
+
+##
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### 時間は「分解する時間」「コードを書く時間」
+
+##
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### やらないことを決めよう！
+
+### すでにやっていることの質を高めよう！
+
+# 💻
+
+<!--
+_class:
+ - lead
+ - invert
+-->
+
+### Enjoy!
